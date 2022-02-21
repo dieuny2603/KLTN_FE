@@ -1,0 +1,95 @@
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+body{
+    background-color: rgb(236, 236, 236);
+}
+a{
+    color: #333;
+}
+a:hover{
+    color: rgb(156, 156, 156) !important;
+}
+.index-sign-nav{
+    background-color: rgb(236, 236, 236);
+    box-shadow: 1px solid rgb(0,0,0,.1);
+}
+.index-sign{
+    font-size: 80% ;
+    padding: .3rem .5rem;
+    color: #333;
+}
+.index-span-sign{
+    background-color: rgb(156, 156, 156);
+    height: 20px;
+    width: 1px;
+    margin-top: 5px;
+}
+.index-brand{
+    width: 200px;
+}
+.index-img-logo{
+    width: 100%;
+}
+.navbar-toggler-icon{
+    width: 1em !important;
+}
+.navbar-toggler:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.index-navbar{
+    color: #eee !important;
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+}
+.index-scroll{
+    width: 100% !important;
+}
+.index-flex{
+    width: 100%;
+}
+.index-search{
+    color: #fdc85b;
+    background-color: #fdc85b;
+    border-color: #fdc85b;
+    height: 44px;
+}
+.index-search:hover{
+    border-color: #eee;
+    background-color: #eee;
+}
+.btn-check:active+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active{
+    background-color: #fdc85b !important;
+    border-color: #eee !important;
+}
+.btn-check:active+.btn-outline-success:focus, .btn-check:checked+.btn-outline-success:focus, .btn-outline-success.active:focus, .btn-outline-success.dropdown-toggle.show:focus, .btn-outline-success:active:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.work .index-text-slide{
+    display: none;
+}
+.index-img-slide{
+    opacity: 1;
+}
+.work:hover .index-text-slide{
+    display: block;
+}
+.index-img-slide:hover{
+    opacity: .8;
+}
+.index-img-cs{
+    text-align: left;
+    width: 60px !important;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+.index-subtext{
+    font-size: 25px !important;
+}
