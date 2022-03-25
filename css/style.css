@@ -6,10 +6,10 @@ body{
     background-color: #333;
 }
 a{
-    color: #333;
+    color: #eee;
 }
 a:hover{
-    color: rgb(156, 156, 156) !important;
+    color: #fdc85b !important;
 }
 .container-fluid{
     margin-top: -15px;
@@ -487,4 +487,118 @@ nav.sticky {
   .optionEdit:hover{
     color: #eee !important;
     list-style: circle;
+  }
+  .purchase-search{
+    margin-top: 10px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .purchase-search input[type=text] {
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    float: left;
+    width: 95%;
+    background: #f1f1f1;
+    border-radius: 5px 0px 0px 5px;
+  }
+  
+  .purchase-search button {
+    float: left;
+    width: 5%;
+    background: #fbd485;
+    color: white;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    z-index: 50000;
+    border-radius: 0 5px 5px 0px;
+  }
+  
+  .purchase-search button:hover {
+    background: #fdc85b;
+  }
+  
+  .purchase-search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.purchase-order{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .purchase-order .purchase-item:last-child{
+   border-bottom: 2px solid #f0c673;
+  }
+  .purchase-item{
+      padding: 10px 0px 10px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid #f5e3c1;
+  }
+  .img-order-list{
+      width: 70px;
+      height: 70px;
+  }
+  .name-order-list, .total-order-list, .price-order-list{
+      font-style: italic;
+      font-size: 1rem;
+  }
+  .total-order-list{
+      font-size: 0.8rem;
+  }
+  .price-order-list{
+      color: #fdc85b;
+  }
+  .total-order{
+    font-size: 16px;
+    text-align: end;
+    
+  }
+  .price-order{
+    padding: 20px 40px;
+    color: #fdc85b;
+  }
+  .footer-order{
+    display: flex;
+      justify-content: space-between;
+  }
+  .time-order{
+      font-style: italic;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    color: #ebebeb;
+    font-size: 0.8rem;
+    
+  }
+  .btn-each-order{
+    padding-bottom: 20px;
+    padding-right: 40px;
+  }
+  .contact-order{
+    padding: 5px 20px;
+    margin-right: 20px;
+    background: #fbd485;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+  }
+  .cancel-order{
+    padding: 5px 20px;
+    border: 1px solid #ebebeb ;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  .contact-order:hover{
+    background: #fdc85b;
+  }
+  .cancel-order:hover{
+    border: 1px solid #ebebeb ;
+    background: #ebebeb;
   }
