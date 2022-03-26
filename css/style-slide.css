@@ -2543,7 +2543,7 @@
   .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    /* left: 0; */
     z-index: 1000;
     display: none;
     float: left;
@@ -8234,8 +8234,8 @@
       text-align: center;
       margin-top: 10px; }
       .owl-carousel .owl-dots .owl-dot {
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
         margin: 5px;
         border-radius: 50%;
         background: rgba(0, 0, 0, 0.1);
@@ -8243,7 +8243,7 @@
         .owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus {
           outline: none !important; }
         .owl-carousel .owl-dots .owl-dot.active {
-          background: #b063c5; }
+          background: #fdc85b; }
   
   .owl-carousel.owl-drag .owl-item {
     -ms-touch-action: pan-y;

@@ -20,7 +20,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a2fc7a8880.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
     <link rel="stylesheet" href="css/style-slide.css">
     <link rel="stylesheet" href="css/style.css">
@@ -75,6 +75,11 @@
                 </ul>
                 <form class="d-flex index-flex">
                     <input class="form-control me-2" type="search" placeholder="Tìm kiếm tên phim" aria-label="Search">
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
                     <button class="btn btn-outline-success index-search" type="submit">
                         <img src="img/search-icon.png" alt="search">
                     </button>
@@ -90,19 +95,20 @@
             <a href="#"><img class="poster-slide" src="img/sukien3.jpg" alt="Owl Image"></a>
         </div>
     </div>
-    
+
     <div">
         <div class="container" style="padding-top: 70px;">
             <ul class="nav nav-tabs tab-phim" id="myTab" role="tablist">
                 <li class="nav-item " role="presentation">
-                    <button class="nav-link tab-show active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                        type="button" role="tab" aria-controls="home" aria-selected="true">
+                    <button class="nav-link tab-movie tab-show active" id="home-tab" data-bs-toggle="tab"
+                        data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
                         PHIM ĐANG CHIẾU
                     </button>
                 </li>
                 <li class="nav-item " role="presentation">
-                    <button class="nav-link tab-show" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                        type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <button class="nav-link tab-movie tab-show" id="profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                        aria-selected="false">
                         PHIM SẮP CHIẾU
                     </button>
                 </li>
@@ -111,7 +117,7 @@
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="time-section">
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                            <div class="owl-carousel owl-theme slide-time">
+                            <div class="owl-time owl-carousel owl-theme slide-time">
                                 <div class="item btn btn-outline-dark btn-time-index active"
                                     onclick="openCity(event, 'monday')">
                                     <div>MONDAY</div>
@@ -148,21 +154,7 @@
                                     <div>SUNDAY</div>
                                     <span>12/5</span>
                                 </div>
-                                <div class="item btn btn-outline-dark btn-time-index">
-                                    <h4>8</h4>
-                                </div>
-                                <div class="item btn btn-outline-dark btn-time-index">
-                                    <h4>9</h4>
-                                </div>
-                                <div class="item btn btn-outline-dark btn-time-index">
-                                    <h4>10</h4>
-                                </div>
-                                <div class="item btn btn-outline-dark btn-time-index">
-                                    <h4>11</h4>
-                                </div>
-                                <div class="item btn btn-outline-dark btn-time-index">
-                                    <h4>12</h4>
-                                </div>
+
                             </div>
                         </ul>
                         <div class="tab-content">
@@ -297,147 +289,268 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container">
+                        <div class="row row-coming">
+                            <div class="coming-side">
+                                <div class="coming-movie">
+                                    <a href="#">
+                                        <div class="flex-img">
+                                            <img class="poster-movie" src="img/P1.jpg">
+                                        </div>
+                                        <div class="flex-cs">
+                                            <div class="english-title">
+                                                <div class="h6-poster">
+                                                    ETERNAL
+                                                </div>
+                                                <div class="cs">
+                                                    <img class="img-cs" src="img/cs13.png">
+                                                </div>
+                                            </div>
+                                            <div class="side-poster">
+                                                CHỦNG TỘC BẤT TỬ
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="coming-movie">
+                                    <a href="#">
+                                        <div class="flex-img">
+                                            <img class="poster-movie" src="img/P1.jpg">
+                                        </div>
+                                        <div class="flex-cs">
+                                            <div class="english-title">
+                                                <div class="h6-poster">
+                                                    ETERNAL
+                                                </div>
+                                                <div class="cs">
+                                                    <img class="img-cs" src="img/cs13.png">
+                                                </div>
+                                            </div>
+                                            <div class="side-poster">
+                                                CHỦNG TỘC BẤT TỬ
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="coming-movie">
+                                    <a href="#">
+                                        <div class="flex-img">
+                                            <img class="poster-movie" src="img/P1.jpg">
+                                        </div>
+                                        <div class="flex-cs">
+                                            <div class="english-title">
+                                                <div class="h6-poster">
+                                                    ETERNAL
+                                                </div>
+                                                <div class="cs">
+                                                    <img class="img-cs" src="img/cs13.png">
+                                                </div>
+                                            </div>
+                                            <div class="side-poster">
+                                                CHỦNG TỘC BẤT TỬ
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="coming-movie">
+                                    <a href="#">
+                                        <div class="flex-img">
+                                            <img class="poster-movie" src="img/P1.jpg">
+                                        </div>
+                                        <div class="flex-cs">
+                                            <div class="english-title">
+                                                <div class="h6-poster">
+                                                    ETERNAL
+                                                </div>
+                                                <div class="cs">
+                                                    <img class="img-cs" src="img/cs13.png">
+                                                </div>
+                                            </div>
+                                            <div class="side-poster">
+                                                CHỦNG TỘC BẤT TỬ
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
 
         </div>
-    </div>
-    <div class="event-section" style="background-image: url(/img/bg.png);">
-        <div class="container">
-            <h1 class="title-event">SỰ KIỆN</h1>
-            <div class="featured-carousel owl-carousel">
+        </div>
+        <div class="event-section">
+            <div class="container">
+                <h1 class="title-event">SỰ KIỆN</h1>
+                <div class="featured-carousel owl-carousel owl-time">
 
-                <div class="item">
-                    <div class="work">
-                        <a href="#">
+                    <div class="item">
+                        <div class="work">
+                            <a href="#">
+                                <div class="img d-flex align-items-end justify-content-center index-img-slide"
+                                    style="background-image: url(img/sukien1.jpg);">
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="work">
+                            <div class="img d-flex align-items-end justify-content-center index-img-slide"
+                                style="background-image: url(img/sukien2.jpg);">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="work">
+                            <div class="img d-flex align-items-end justify-content-center index-img-slide"
+                                style="background-image: url(img/sukien3.jpg);">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="work">
                             <div class="img d-flex align-items-end justify-content-center index-img-slide"
                                 style="background-image: url(img/sukien1.jpg);">
 
                             </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="work">
-                        <div class="img d-flex align-items-end justify-content-center index-img-slide"
-                            style="background-image: url(img/sukien2.jpg);">
-
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="work">
-                        <div class="img d-flex align-items-end justify-content-center index-img-slide"
-                            style="background-image: url(img/sukien3.jpg);">
+                    <div class="item">
+                        <div class="work">
+                            <div class="img d-flex align-items-end justify-content-center index-img-slide"
+                                style="background-image: url(img/sukien2.jpg);">
 
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="work">
-                        <div class="img d-flex align-items-end justify-content-center index-img-slide"
-                            style="background-image: url(img/sukien1.jpg);">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="work">
-                        <div class="img d-flex align-items-end justify-content-center index-img-slide"
-                            style="background-image: url(img/sukien2.jpg);">
-
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <footer class="footer-index">
+            <div class="flex-footer">
 
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop()) {
-                    $('nav').addClass('sticky');
-                } else {
-                    $('nav').removeClass('sticky');
-                }
+                <div class="text-footer">
+                    <div class="text-side">
+                        <p>Tên Doanh Nghiệp: CÔNG TY TNHH MEGAS VIETNAM</p>
+                        <p>Giấy CNĐKDN: 0303675393, đăng ký lần đầu ngày 01/11/2021</p>
+                        <p>Cơ quan cấp: Phòng Đăng ký kinh doanh - Sở kế hoạch và đầu tư Thành phố Đà Nẵng</p>
+                        <p>Địa chỉ kinh doanh: Tầng 2, Rivera Park - Số 28 Trần Hưng Đạo, Quận Sơn Trà, TP.Đà Nẵng.
+                        </p>
+                    </div>
+                    <div class="icon-side">
+                        <img src="/img/icon-notify.png" alt="logo-noti" width="200px">
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <div style="color: rgba(238, 238, 238, 0.733); flex: 1">COPYRIGHT 2022 MEGAS. All RIGHTS RESERVED
+                    </div>
+                    <img class="img-logo-footer" src="/img/logo.gif" alt="logo">
+                    <div class="icon-footer">
+                        <a href="https://www.facebook.com/nanast519/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <a href="tel:19000978">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop()) {
+                        $('nav').addClass('sticky');
+                    } else {
+                        $('nav').removeClass('sticky');
+                    }
+                });
             });
-        });
-    </script>
+        </script>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <script src="js/owl.carousel.js"></script> 
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css"> -->
 
-    <script>
-        $("#owl-demo").owlCarousel({
-            animateOut: 'fadeOut',
-            dots: false,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            items: 1,
-            itemsDesktop: [1199, 3],
-            itemsDesktopSmall: [979, 3]
 
-        });
 
-    </script>
-
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: false,
-            margin: 10,
-            nav: false,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                300: {
-                    items: 2
-                },
-                500: {
-                    items: 3
-                },
-                800: {
-                    items: 4
-                },
-                1000: {
-                    items: 5
-                },
-                1200: {
-                    items: 7
+        <script>
+            $('.owl-time').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    300: {
+                        items: 2
+                    },
+                    500: {
+                        items: 3
+                    },
+                    800: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 5
+                    },
+                    1200: {
+                        items: 7
+                    }
                 }
-            }
-        })
-    </script>
+            })
+        </script>
 
-    <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tab-list");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tab-list");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("btn-time-index");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
             }
-            tablinks = document.getElementsByClassName("btn-time-index");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+        </script>
 
+        <script>
+            $("#owl-demo").owlCarousel({
+                animateOut: 'fadeOut',
+                dots: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                items: 1,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 3]
+
+            });
+
+        </script>
 
 
 </body>
