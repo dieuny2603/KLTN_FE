@@ -46,6 +46,10 @@ nav.sticky {
     .login-section{
         justify-content: center !important;
     }
+    .login-h1{
+        width: 300px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 520px) {
