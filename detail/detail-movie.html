@@ -258,7 +258,6 @@
     <section class="comment-section" id="app">
         <div class="container container-comment">
             <div class="comment-side">Bình luận</div>
-            <!-- <div class="row"> -->
             <div class="commented">
                 <img src="/img/bg-movie.jpg" alt="">
                 <div class="star-text">
@@ -278,8 +277,6 @@
                         </p>
                     </div>
                 </div>
-
-                <!--End Comment-->
             </div>
             <div class="commented">
                 <img src="/img/bg-movie.jpg" alt="">
@@ -299,12 +296,7 @@
                         </p>
                     </div>
                 </div>
-
-                <!--End Comment-->
             </div>
-            <!--End col -->
-            <!-- </div> End row -->
-            <!-- <div class="row"> -->
             <div class="comment-text">
                 <textarea type="text" class="input" placeholder="Viết bình luận của bạn ở đây" v-model="newItem"
                     @keyup.enter="addItem()"></textarea>
@@ -319,12 +311,9 @@
                     <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Bình luận</button>
                 </div>
 
-            </div><!-- End col -->
-            <!-- </div> -->
-            <!--End Row -->
+            </div>
         </div>
-        <!--End Container -->
-    </section><!-- end App -->
+    </section>
 
     <footer class="footer-index">
         <div class="flex-footer">
@@ -373,33 +362,5 @@
             });
         });
     </script>
-
-    <!-- <script>
-        $(document).ready(function () {
-
-            $(".primaryContained").on('click', function () {
-                $(".comment").addClass("commentClicked");
-            });//end click
-            $("textarea").on('keyup.enter', function () {
-                $(".comment").addClass("commentClicked");
-            });//end keyup
-        });//End Function
-        new Vue({
-            el: "#app",
-            data: {
-                title: 'Add a comment',
-                newItem: '',
-                item: [],
-            },
-            methods: {
-                addItem() {
-                    this.item.push(this.newItem);
-                    this.newItem = "";
-                }
-            }
-        });
-    </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> -->
 
 </body>
