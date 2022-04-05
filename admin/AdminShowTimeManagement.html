@@ -75,75 +75,79 @@
             <div style="    display: flex;
         justify-content: space-between;">
                 <div class="h5-detail">Quản lý suất chiếu</div>
-                <button type="button" class="btn btn-danger btn-buy" data-toggle="modal"
-                    data-target=".bd-example-modal-lg" style="    width: 70px;
-                                    margin-top: 10px;
-                                    height: 40px; margin-right: 7px;">+</button>
+                <button type="button" id="btnAddShowTime" class="btn-common btn-buy" data-toggle="modal"
+                    data-target=".bd-example-modal-lg"><i class="fa fa-plus" aria-hidden="true"></i>
+                    Thêm mới</button>
             </div>
-            <form class="formAdd" id="form-add" action="" method="POST">
-                <div class="modal modal-add fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                    aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Thêm suất chiếu</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-
-                            <div class="modal-body">
-                                <div class="ad-phim1">
+            <!-- Add suất chiếu -->
+            <form action="" method="">
+                <div id="modalAddShowTime" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Thêm suất chiếu</h4>
+                            <button type="button" class="close-showTime close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body-plus">
+                            <div class="wrapModal">
+                                <div class="rowShowTime">
                                     <label style="width: 150px;" for="">Chọn phim</label>
-                                    <div class="form-group">
+                                    <div class="rowST">
                                         <select name="nameEN" id="phim" class="form-select">
                                             Chọn phim
                                             <option value="">
                                                 Hello
                                             </option>
+                                            <option value="">
+                                                Hi
+                                            </option>
                                         </select>
                                         <span class="span-error"></span>
                                     </div>
                                 </div>
-                                <div class="ad-phim1">
-                                    <label style="width: 150px;" for="">Ngày chiếu</label>
-                                    <div class="form-user">
-                                        <input name="date" id="date" class="date-lc dateAdd" type="date"
-                                            style="width:100%">
-                                        <span class="span-error-add"></span>
+                                <div class="rowShowTime">
+                                    <div class="rowST">
+                                        <label style="width: 150px;" for="">Ngày chiếu</label>
+                                        <div class="form-user">
+                                            <input name="date" id="date" class="date-lc dateAdd form-select"
+                                                style="background-image: none;" type="date" style="width:100%">
+                                            <span class="span-error-add"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div id="form-addSC">
-                                    <div class="lc-suatchieu">
-                                        <div class="">
+                                    <div class="row lc-suatchieu">
+                                        <div class="col-5 showTimeComponent">
                                             <label for="">Suất chiếu</label>
-                                            <select id="" name="" class="select-pc">
+                                            <select id="" name="" class="form-select">
                                                 <option value="">9:00</option>
                                                 <option value="">12:00</option>
                                                 <option value="">20:00</option>
                                             </select>
                                         </div>
-                                        <div class="">
+                                        <div class="col-5 showTimeComponent">
                                             <label for="">Rạp</label>
-                                            <select id="room" name="room" class="select-pc">
+                                            <select id="room" name="room" class="form-select">
                                                 <option value="1">CINEMA 1</option>
                                                 <option value="2">CINEMA 2</option>
                                                 <option value="3">CINEMA 3</option>
                                             </select>
                                         </div>
+                                        <div class="col-2">
+                                            
+                                        </div>
                                     </div>
-
-                                    <span class="span-error-add time-error"></span>
                                 </div>
-                                <button id="btnAddSC" type="button">Add</button>
+                                <button class="btn-SC" id="btnAddSC" type="button">Thêm suất chiếu</button>
                             </div>
-
-                            <div class="modal-footer">
-                                <p class="alertAdd" style="color: red;"></p>
-                                <button type="submit" class="btnAdd btn btn-danger">Thêm</button>
-                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-showTime">Đóng</button>
+                            <button type="button" class="btn-common close-showTime">Thêm</button>
                         </div>
                     </div>
                 </div>
             </form>
+
             <span class="line-detail"></span>
             <table class="table table-striped  table-bordered" style="font-size: 15px;">
                 <thead>
@@ -153,7 +157,6 @@
                                 style="justify-content: space-between; margin-top: 20px; align-items: flex-start;">
                                 <select name="" class="form-select filmSelect" style="width: 50%;">
                                     <option href="" value=""> Tất cả phim </option>
-                                    Hello nak
                                     <option href="" value="">
                                         Hi nak
                                     </option>
@@ -250,6 +253,7 @@
             </form>
         </tbody>
         </thead>
+        <!-- Edit Suất chiếu -->
         <div id="myModal" class="modal">
             <div class="modal-content" style="width: 40%; font-size: 16px;">
                 <div class="modal-header">

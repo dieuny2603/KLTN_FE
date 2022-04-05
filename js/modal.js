@@ -4,6 +4,8 @@ var btn = document.getElementById("myBtn");
 var span = document.querySelector(".closeBtn");
 var modalAddFilm = document.getElementById("modalAddFilm");
 var modalEditFilm = document.getElementById("modalEditFilm");
+var modalAddShowTime = document.getElementById("modalAddShowTime");
+
 $('#btnAddFilm').on('click', function(){
   modalAddFilm.style.display = "block";
 });
@@ -13,6 +15,13 @@ $('.close-footer').on('click',function(){
 });
 $('#btnEditFilm').on('click', function(){
   modalEditFilm.style.display = "block";
+});
+$('#btnAddShowTime').on('click', function(){
+  modalAddShowTime.style.display = "block";
+});
+$('.close-showTime').on('click',function(){
+  modalAddShowTime.style.display = "none";
+  modalEditShowTime.style.display = "none";
 });
 
 
