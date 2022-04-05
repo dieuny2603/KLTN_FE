@@ -2,6 +2,20 @@ var modal = document.getElementById('myModal');
 var modalAdd= document.querySelector('.modal-add');
 var btn = document.getElementById("myBtn");
 var span = document.querySelector(".closeBtn");
+var modalAddFilm = document.getElementById("modalAddFilm");
+var modalEditFilm = document.getElementById("modalEditFilm");
+$('#btnAddFilm').on('click', function(){
+  modalAddFilm.style.display = "block";
+});
+$('.close-footer').on('click',function(){
+    modalAddFilm.style.display = "none";
+    modalEditFilm.style.display = "none";
+});
+$('#btnEditFilm').on('click', function(){
+  modalEditFilm.style.display = "block";
+});
+
+
     // btn.onclick = function () {
     //     modal.style.display = "block";
     // }
