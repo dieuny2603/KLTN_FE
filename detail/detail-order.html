@@ -447,107 +447,18 @@
                 </div>
             </div>
         </div>
-        <div class="container container-combo">
-            <div class="combo">
-                <div class="card-detail" style="width: 12rem;">
-                    <img src="/img/P1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bắp</h5>
-                        <p class="card-text">Giá: 40.000VND</p>
-                        <div class="buttons_added">
-                            <input class="minus is-form" type="button" value="-">
-                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number"
-                                value="1">
-                            <input class="plus is-form" type="button" value="+">
-                        </div>
-                    </div>
-                </div>
-                <div class="card-detail" style="width: 12rem;">
-                    <img src="/img/P1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bắp</h5>
-                        <p class="card-text">Giá: 40.000VND</p>
-                        <div class="buttons_added">
-                            <input class="minus is-form" type="button" value="-">
-                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number"
-                                value="1">
-                            <input class="plus is-form" type="button" value="+">
-                        </div>
-                    </div>
-                </div>
-                <div class="card-detail" style="width: 12rem;">
-                    <img src="/img/P1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bắp</h5>
-                        <p class="card-text">Giá: 40.000VND</p>
-                        <div class="buttons_added">
-                            <input class="minus is-form" type="button" value="-">
-                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number"
-                                value="1">
-                            <input class="plus is-form" type="button" value="+">
-                        </div>
-                    </div>
-                </div>
-                <div class="card-detail" style="width: 12rem;">
-                    <img src="/img/P1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bắp</h5>
-                        <p class="card-text">Giá: 40.000VND</p>
-                        <div class="buttons_added">
-                            <input class="minus is-form" type="button" value="-">
-                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number"
-                                value="1">
-                            <input class="plus is-form" type="button" value="+">
-                        </div>
-                    </div>
-                </div>
-                <div class="card-detail" style="width: 12rem;">
-                    <img src="/img/P1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bắp</h5>
-                        <p class="card-text">Giá: 40.000VND</p>
-                        <div class="buttons_added">
-                            <input class="minus is-form" type="button" value="-">
-                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number"
-                                value="1">
-                            <input class="plus is-form" type="button" value="+">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-order-section">
+        <div class="btn-order-section">
+            <a href="" style="color: #333;">
                 <button type="button" class="btn btn-buy btn-back">
                     Trở lại
                 </button>
+            </a>
+            <a href="detail-combo.html" style="color: #333;">
                 <button type="button" class="btn btn-buy btn-order">
-                    Đặt vé
+                    Tiếp tục
                 </button>
-            </div>
+            </a>
         </div>
-    </div>
-
-
-    <script>
-        $('input.input-qty').each(function () {
-            var $this = $(this),
-                qty = $this.parent().find('.is-form'),
-                min = Number($this.attr('min')),
-                max = Number($this.attr('max'))
-            if (min == 0) {
-                var d = 0
-            } else d = min
-            $(qty).on('click', function () {
-                if ($(this).hasClass('minus')) {
-                    if (d > min) d += -1
-                } else if ($(this).hasClass('plus')) {
-                    var x = Number($this.val()) + 1
-                    if (x <= max) d += 1
-                }
-                $this.attr('value', d).val(d)
-            })
-        })
-    </script>
-
 
 
 </body>
