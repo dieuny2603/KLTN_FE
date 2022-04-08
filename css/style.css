@@ -1907,3 +1907,25 @@ button.primaryContained:hover {
   .btn-mode button:hover{
     opacity: 1;
   }
+  /* USER MANAGEMENT */
+  
+  /* USER MANAGEMENT */
+  .span-error{
+    font-size: 12px;
+    color: #f93838;
+    font-style: italic;
+  }
+  .ad-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .userPosition-select{
+    height: 2rem;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+  }
+  .userPosition-select:focus {
+    border-color: #333;
+    box-shadow: none !important;
+}
