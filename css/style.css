@@ -2022,3 +2022,9 @@ button.primaryContained:hover {
     border-radius: 20px;
     padding: 2px 10px;
 }
+.btn-seat-small{
+    margin: 10px 2px;
+}
+.td-order-small{
+    justify-content: center;
+}
