@@ -2275,3 +2275,22 @@ button.primaryContained:hover {
     font-weight: 700;
     padding-bottom: 15px;
 }
+
+
+
+.wrap-headerAd{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.menu-stat{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.menu-stat li{
+    width: 100px;
+}
+.menu-stat li a{
+    font-size: 1rem;
+    color: #333 !important;
+}
